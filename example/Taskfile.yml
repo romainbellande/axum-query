@@ -1,0 +1,15 @@
+version: '3'
+
+env:
+  RUST_ENV: development
+
+tasks:
+  start:
+    desc: start server
+    cmds:
+      - cargo run
+    sources:
+      - ./src/**/*.rs
+      - ./core/**/*.rs
+      - ./entity/**/*.rs
+      - ./migration/**/*.rs
